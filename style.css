@@ -1,0 +1,150 @@
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+ 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/** Image - https://www.w3schools.com/css/css_rwd_grid.asp **/   
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
+.overflow {
+    overflow-x:auto;
+}
+
+#pfp {
+    border: 3px solid #3D5A80;
+}
+
+#name {
+    font-size: 35px;
+}
+
+#resume {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.heading {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 40px;
+    border: 3px solid #3D5A80;
+    padding: 10px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://lh3.googleusercontent.com/R3F0v3gbNfr9BA4y93wBzQBBf2A1yme1qzfq0iAZa9hbGELCN0M6u2Q6-EkG3Pq_sOfx4M7mHWlo5caq1HM7VFJGVDU2WqLoofgIQo5A6HedbE4_GO-Zjr-17AkL_AaM9BoUfj-ZnQ=w2400");
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("https://lh3.googleusercontent.com/ngp9H46lEmW-h97XEtL6m7Uec7CuYGq7MqM1HvBA6qgrVcRj0PEplJLrRDwXyKKj2StwxSvX4xUjk8sboiPx9kqHxftqJ86HZuA-Ehd5ItF9nSJS-cjs4LZMTNkpeGpb1t6knli8JQ=w2400");
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social {
+    font-size: 60px;
+    padding: 5px;
+}
+
+.download {
+    font-size: 60px;
+}
+
+.sections {
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #3D5A80;
+    padding: 10px;
+}
+
+.container-fluid {
+    background-color: #1f2531;
+    color: #EE6C4D;
+    font-family: 'Montserrat';
+    line-height: 25px;
+    text-align: center;
+    border-left: 3px solid #3D5A80;
+    border-right: 3px solid #3D5A80;
+}
+
+.contact-info {
+    font-size : 20px;
+}
+
+body {
+    background-color: #1f2531; 
+}
+
+.hr {
+    border: 2px solid #3D5A80;
+}
+
+a:link {
+    color: #E0FBFC;
+}
+
+a:visited {
+    color: #E0FBFC;
+}
+
+a:hover {
+    color: #98C1D9;
+  }
+
+a:active {
+    color: #3D5A80;
+  }
